@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Base de données Product"
+       android:textSize="30dp"
+       android:textStyle="bold"
+       android:textColor="#BF2258"
+       android:id="@+id/text"
+       />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:hint="Id"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:hint="Name"
+        android:id="@+id/name"
+        android:textAlignment="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:hint="Quantity"
+        android:id="@+id/qt"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/addProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qt"
+        android:backgroundTint="#E91E63"
+        android:text="ADD PRODUCT"
+        android:textAlignment="center"
+        android:onClick="ajouter"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addProduct"
+        android:backgroundTint="#E91E63"
+        android:text="DELETE PRODUCT"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:id="@+id/deleteProduct"
+        android:onClick="supprimer"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/deleteProduct"
+        android:backgroundTint="#E91E63"
+        android:text="SHOW PRODUCT"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:id="@+id/showProduct"
+        android:onClick="lister"/>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/showProduct"
+       android:text="Product List : "
+       android:id="@+id/productList"/>
+
+
+</RelativeLayout>
